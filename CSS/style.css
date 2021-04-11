@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+:root {
+    --mainColor: #ff7d27;
+}
+
