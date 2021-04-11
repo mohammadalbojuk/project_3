@@ -17,3 +17,58 @@ body {
     --mainColor: #ff7d27;
 }
 
+/* history */
+
+.history {
+    min-height: 100vh;
+    background-image: url(../images/4th-section.jpg);
+    background-size: cover;
+    background-position: center calc(50% + 0px);
+    background-attachment: fixed;
+    padding: 18vh 0;
+}
+
+.history .container {
+    width: 60%;
+    position: relative;
+}
+
+.history .container .img {
+    overflow: hidden;
+}
+
+.history .container img {
+    width: 100%;
+   transform: scale(1.04);
+}
+
+.history .container .text {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 30px;
+    font-size: 15px;
+}
+
+.history .container .year {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.history .container .year a {
+    margin: 0 15px;
+    padding: 10px 20px;
+    outline: 4px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.history .container .year a:first-child {
+    outline: 4px solid var(--mainColor);
+}
+
+.history .container .year a:hover {
+    color: var(--mainColor);
+}
