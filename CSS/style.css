@@ -17,3 +17,339 @@ body {
     --mainColor: #ff7d27;
 }
 
+
+/* first section */
+
+.first-section {
+    height: 100vh;
+    background-image: url(../images/1st-section.jpg);
+    background-size: cover;
+    background-position: center calc(50% + 0px);
+    text-align: center;
+    padding-top: 30vh;
+    background-attachment: fixed;
+}
+
+
+.first-section h1 {
+    font-size: 128px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+}
+
+.first-section span {
+    color: #fff;
+    font-size: 45px;
+}
+
+.first-section span em {
+    color: var(--mainColor);
+    font-style: normal;
+}
+
+.first-section .more-btn {
+    margin-top: 30px;
+}
+
+.first-section .more-btn a {
+    padding: 15px 20px;
+    background: var(--mainColor);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    font-weight: 900;
+}
+
+
+/* about section */
+
+.about {
+    min-height: 100vh;
+    background-image: url(../images/2nd-section.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center calc(50% + 0px);
+    text-align: center;
+    padding: 15vh 0;
+}
+
+.about .container {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    grid-gap: 30px;
+}
+
+.about .container .about-item.shadow {
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about .container .about-item.shadow span {
+    display: inline-block;
+    min-width: 50px;
+    height: 3px;
+    background-color: var(--mainColor);
+    margin: 15px 0;
+}
+
+.about .container .about-item.shadow h2 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.about .container .about-item.shadow p {
+    color: #fff;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.about .container .about-item:first-child {
+    grid-row: 1/3;
+    text-align: left;
+}
+
+.about .container .about-item:first-child h2 ,
+.about .container .about-item:first-child p ,
+.about .container .about-item:first-child ul ,
+.about .container .about-item:first-child a {
+    color: #fff;
+}
+
+.about .container .about-item:first-child span {
+    display: inline-block;
+    min-width: 50px;
+    height: 3px;
+    background-color: var(--mainColor);
+    margin: 15px 0;
+}
+
+.about .container .about-item:first-child p {
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.about .container .about-item:first-child p a {
+    text-decoration: none;
+    color: #3CC;
+}
+
+.about .container .about-item:first-child p a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+.about .container .about-item:first-child ul {
+    margin: 25px 0;
+}
+
+.about .container .about-item:first-child ul li {
+    list-style: none;
+    line-height: 2.5;
+    font-size: 15px;
+}
+
+.about .container .about-item:first-child .more-btn {
+    margin-top: 30px;
+}
+
+.about .container .about-item:first-child .more-btn a {
+    padding: 15px 20px;
+    background: var(--mainColor);
+}
+
+/* price section */
+
+.price {
+    min-height: 100vh;
+    background-image: url(../images/3rd-section.jpg);
+    background-size: cover;
+    background-position: center calc(50% + 0px);
+    background-attachment: fixed;
+    text-align: center;
+    padding: 30vh 0;
+}
+
+.price .container {
+    position: relative;
+}
+
+
+.price .container .price-items {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 30px;
+}
+
+.price .container .price-items .price-item .img {
+    height: 70%;
+    position: relative;
+    overflow: hidden;
+}
+
+.price .container .price-items .price-item .name-price {
+    height: 30%;
+    background-color: #fff;
+    color: black;
+}
+
+.price .container .price-items .price-item img {
+   width: 100%;
+}
+
+.price .container .price-items .price-item:nth-of-type(2) img {
+    transform: scale(1.5);
+    position: absolute;
+    right: 20%;
+}
+
+.price .container .price-items .price-item:nth-of-type(1) img {
+    transform: scale(2);
+    position: absolute;
+    right: -10%;
+}
+
+.price .container .price-items .price-item h2 {
+    font-size: 19px;
+    padding-top: 20px;
+}
+
+.price .container .price-items .price-item span {
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--mainColor);
+}
+
+.price .bollets {
+    position: absolute;
+    width: 100%;
+    bottom: -70px;
+}
+
+.price .bollets ul li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.price .bollets ul li:hover {
+    opacity: 1;
+    cursor:pointer;
+}
+
+.price .bollets ul li:first-child {
+    opacity: 1;
+}
+
+/* history */
+
+.history {
+    min-height: 100vh;
+    background-image: url(../images/4th-section.jpg);
+    background-size: cover;
+    background-position: center calc(50% + 0px);
+    background-attachment: fixed;
+    padding: 18vh 0;
+}
+
+.history .container {
+    width: 60%;
+    position: relative;
+}
+
+.history .container .img {
+    overflow: hidden;
+}
+
+.history .container img {
+    width: 100%;
+   transform: scale(1.04);
+}
+
+.history .container .text {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 30px;
+    font-size: 15px;
+}
+
+.history .container .year {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.history .container .year a {
+    margin: 0 15px;
+    padding: 10px 20px;
+    outline: 4px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.history .container .year a:first-child {
+    outline: 4px solid var(--mainColor);
+}
+
+.history .container .year a:hover {
+    color: var(--mainColor);
+}
+
+/* contact */
+
+.contact {
+    min-height: 100vh;
+    background-image: url(../images/5th-section.jpg);
+    background-position: center calc(50% + 0px);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20vh 0;
+}
+
+.contact .container {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-gap: 30px;
+}
+
+.contact .container .email {
+    padding: 25px 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.contact .container .map {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.contact .container .email input ,
+.contact .container .email textarea {
+    width: 100%;
+    margin-bottom: 28px;
+    padding: 19px;
+    border-radius: 5px;
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.contact .container .email button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--mainColor);
+    letter-spacing: 0.5;
+    font-weight: bold;
+    cursor: pointer;
+}
+
