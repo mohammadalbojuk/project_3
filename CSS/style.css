@@ -17,3 +17,89 @@ body {
     --mainColor: #ff7d27;
 }
 
+/* price section */
+
+.price {
+    min-height: 100vh;
+    background-image: url(../images/3rd-section.jpg);
+    background-size: cover;
+    background-position: center calc(50% + 0px);
+    background-attachment: fixed;
+    text-align: center;
+    padding: 30vh 0;
+}
+
+.price .container {
+    position: relative;
+}
+
+
+.price .container .price-items {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 30px;
+}
+
+.price .container .price-items .price-item .img {
+    height: 70%;
+    position: relative;
+    overflow: hidden;
+}
+
+.price .container .price-items .price-item .name-price {
+    height: 30%;
+    background-color: #fff;
+    color: black;
+}
+
+.price .container .price-items .price-item img {
+   width: 100%;
+}
+
+.price .container .price-items .price-item:nth-of-type(2) img {
+    transform: scale(1.5);
+    position: absolute;
+    right: 20%;
+}
+
+.price .container .price-items .price-item:nth-of-type(1) img {
+    transform: scale(2);
+    position: absolute;
+    right: -10%;
+}
+
+.price .container .price-items .price-item h2 {
+    font-size: 19px;
+    padding-top: 20px;
+}
+
+.price .container .price-items .price-item span {
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--mainColor);
+}
+
+.price .bollets {
+    position: absolute;
+    width: 100%;
+    bottom: -70px;
+}
+
+.price .bollets ul li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.price .bollets ul li:hover {
+    opacity: 1;
+    cursor:pointer;
+}
+
+.price .bollets ul li:first-child {
+    opacity: 1;
+}
