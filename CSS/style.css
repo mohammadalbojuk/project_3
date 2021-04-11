@@ -306,3 +306,50 @@ body {
     color: var(--mainColor);
 }
 
+/* contact */
+
+.contact {
+    min-height: 100vh;
+    background-image: url(../images/5th-section.jpg);
+    background-position: center calc(50% + 0px);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20vh 0;
+}
+
+.contact .container {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-gap: 30px;
+}
+
+.contact .container .email {
+    padding: 25px 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.contact .container .map {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.contact .container .email input ,
+.contact .container .email textarea {
+    width: 100%;
+    margin-bottom: 28px;
+    padding: 19px;
+    border-radius: 5px;
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.contact .container .email button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: var(--mainColor);
+    letter-spacing: 0.5;
+    font-weight: bold;
+    cursor: pointer;
+}
+
